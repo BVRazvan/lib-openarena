@@ -21,19 +21,19 @@ config LIBOPENARENASERVER_MAIN_FUNCTION
     default n
 
 config LIBOPENARENASERVER_ASM
-    bool "Provide assembly code"
+    bool "Provide assembly code for optimized math calculations"
     default y
 
 config LIBOPENARENASERVER_BOTLIB
-    bool "Provide botlib code"
+    bool "Provide code supporting bot players actions"
     default y
 
 config LIBOPENARENASERVER_GAME
-    bool "Provide ingame code"
+    bool "Provide code for ingame logic"
     default y
 
 config LIBOPENARENASERVER_NULL
-    bool "Provide null device code"
+    bool "Provide code for dummy implementations of rendering-related functions"
     default y
 
 config LIBOPENARENASERVER_QCOMMON
@@ -41,11 +41,11 @@ config LIBOPENARENASERVER_QCOMMON
     default y
 
 config LIBOPENARENASERVER_SERVER
-    bool "Provide server code"
+    bool "Provide code for the game loop, frames generation and networking communication"
     default y
 
 config LIBOPENARENASERVER_SYS
-    bool "Provide system code"
+    bool "Provide code for OS-level interaction"
     default y
 
 endif
